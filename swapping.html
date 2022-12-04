@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <br><br>
+    <input type="text" id="b">
+    <br><br>
+    <button onclick="fun()">submit</button>
+    <br><br>
+    <input type="text" id="c">
+    <br><br>
+    <input type="text" id="d">
+    <br><br>
+
+</body>
+<script>
+    function fun(){
+        var a,b,temp;
+        a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        
+        temp=a;
+        a=b;
+        b=temp;
+
+        document.getElementById("c").value=a;
+        document.getElementById("d").value=b;
+    }
+
+</script>
+</html>

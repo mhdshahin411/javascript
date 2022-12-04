@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <input type="text" id="num1">
+    <button onclick="fun()">submit</button>
+    <input type="text" id="num2">
+   
+    <br> <br>
+
+    <input type="text" id="num">
+    <input type="text" id="num1">
+    <button onclick="fun1()">submit</button>
+    <input type="text" id="num22">
+
+    <br> <br>
+
+    <input type="text" id="num">
+    <input type="text" id="num1">
+    <button onclick="fun2()">submit</button>
+    <input type="text" id="num222">
+
+    <br> <br>
+
+    <input type="text" id="num">
+    <input type="text" id="num1">
+    <button onclick="fun3()">submit</button>
+    <input type="text" id="num2222">
+
+   
+
+    <script>
+        function fun(){
+            var a,b;
+            a=Number(document.getElementById("num").value);
+            b=Number(document.getElementById("num1").value);
+            document.getElementById("num2").value=a+b;
+        }
+
+        function fun1(){
+            var a,b;
+            a=Number(document.getElementById("num").value);
+            b=Number(document.getElementById("num1").value);
+            document.getElementById("num22").value=a*b;
+        }
+
+        function fun2(){
+            var a,b;
+            a=Number(document.getElementById("num").value);
+            b=Number(document.getElementById("num1").value);
+            document.getElementById("num222").value=a/b;
+        }
+
+        function fun3(){
+            var a,b;
+            a=Number(document.getElementById("num").value);
+            b=Number(document.getElementById("num1").value);
+            document.getElementById("num2222").value=a-b;
+        }
+
+    </script>
+</body>
+</html>

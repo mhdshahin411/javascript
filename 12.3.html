@@ -7,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="num">
+    <button onclick="fun()">submit</button>
+    <input type="text" id="num1">
     <script>
-        document.write
+        function fun()
+        {
+            var a;
+            a=document.getElementById("num").value;
+            document.getElementById("num1").value=a;
+        }
     </script>
 </body>
 </html>

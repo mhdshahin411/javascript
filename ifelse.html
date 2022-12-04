@@ -7,8 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="num"></p>
     <script>
-        document.write
+        
+        const hour=new Date().getHours();
+        let greeting;
+    
+        if(hour<18)
+        {
+            greeting="good day";
+        }else{
+            greeting="good evening";
+        }
+
+        document.getElementById("num").innerHTML=greeting
+
     </script>
 </body>
 </html>

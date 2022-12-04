@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button onclick="fun()">submit</button>
+<script>
+        function fun(){
+     a=Number(document.getElementById("a").value);
+       b=Number( document.getElementById("b").value); 
+            
+        if(a>b){
+    result="positive";
+        }else{
+            result="negative";
+        }
+        document.getElementById("result").innerHTML=result
+    }
+    </script>
+</body>
+</html>
