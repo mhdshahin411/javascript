@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <input type="text" id="a">
+    <button onclick="getnum()">submit</button>
+    
+</body>
+ <script>
+    function getnum(){
+            
+        a=document.getElementById("a").value;
+            
+             
+        if(a>50){
+         result="greatest";
+         
+        } else if (a==50){
+           
+            result="equal"
+         
+        } else if (a<50){
+            
+            result="lesser"
+            
+        }
+        document.getElementById("result").innerHTML=result
+
+    
+        }
+    
+ </script>
+</html>

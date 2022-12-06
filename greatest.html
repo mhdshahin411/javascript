@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="text" id="c">
+    <input type="text" id="d">
+    <button onclick="getnum()">submit</button>
+</body>
+<script>
+    function getnum(){
+        a=Number(document.getElementById("a").value);
+        b=Number(document.getElementById("b").value);
+        c=Number(document.getElementById("c").value);
+
+        if (a>=b && a>=c){
+            result=+a
+        }
+        else if (b>=a && b>=c){
+            result=+b
+    }
+         else if (c>=a && c>=b){
+            result=+c
+    }
+    document.getElementById("d").value=result
+}
+</script>
+</html>
