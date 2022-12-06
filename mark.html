@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="getnum()">submit</button>
+</body>
+<script>
+    function getnum(){
+     var a=document.getElementById("a").value;
+        if(a>=90 && a<=100){
+            alert("grade A")
+        
+        }else if(a>=80 && a<=89){
+            alert("grade B")
+        }
+        else if(a>=70 && a<=79){
+            alert("grade C")
+            
+        }else if (a>100){
+            alert("mark not exist")
+        }
+
+        else{
+            alert("failed");
+        }
+    }
+    
+</script>
+</html>
