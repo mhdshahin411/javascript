@@ -7,23 +7,44 @@
     <title>Document</title>
 </head>
 <body>
+    <div>"demo"
+
+    </div>
     <script>
-        const array = [{
-            name:"shahin",
-            id:101
-        },{
-            name:"jisin",
-            id:2102
-        }]
+        const array = [ name="shahin", id=101 ]
+    
+        const array2 =[ name="jisin", id=2102 ]
+
+        const name3 = [ name="waseem", id=532 ]
+        
 
         setdetails = ()=>{
             localStorage.setItem("sha",JSON.stringify(array));
+        }
+
+        setdetails2 =()=>{
+            localStorage.setItem("sha2",JSON.stringify(array2));
+        }
+
+        setdetails3 = ()=>{
+            localStorage.setItem("sha3",JSON.stringify(name3));
         }
    
         setdetails();
 
         var users = JSON.parse(localStorage.getItem("sha"))
         console.log(users)
+        
+        setdetails2();
+        var users1 = JSON.parse(localStorage.getItem("sha2"))
+        console.log(users1)
+        
+        setdetails3();
+        var users2 = JSON.parse(localStorage.getItem("sha3"))
+        console.log(users2)
+
+
+        
     </script>
 </body>
 </html>
